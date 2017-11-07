@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="e0b1e47d-b9f7-499e-bd82-22fa2500bdc7" name="vagrant" url="http://127.0.0.1:81">
+        <fileTransfer host="127.0.0.1" port="2222" privateKey="E:\Exchange\computing_ad\grad_project\sad\.vagrant\machines\default\virtualbox\private_key_putty.ppk" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions controlEncoding="UTF-8" dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="2222" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
