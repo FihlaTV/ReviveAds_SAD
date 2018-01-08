@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.18, created on 2017-09-26 22:32:52
+<?php /* Smarty version 2.6.18, created on 2017-11-24 22:12:32
          compiled from players.html */ ?>
 <?php echo '
 <style type="text/css">

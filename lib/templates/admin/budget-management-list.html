@@ -1,0 +1,121 @@
+{*<!--
+
++---------------------------------------------------------------------------+
+| Revive Adserver                                                           |
+| http://www.revive-adserver.com                                            |
+|                                                                           |
+| Copyright: See the COPYRIGHT.txt file.                                    |
+| License: GPLv2 or later, see the LICENSE.txt file.                        |
++---------------------------------------------------------------------------+
+
+-->*}
+
+
+<div class='tableWrapper'>
+    <div class='tableHeader'>
+
+
+        <ul class='tableFilters alignRight'>
+
+            {if !empty($topPager->links)}
+            <li>
+                <div class="pager">
+                    <span class="controls">{$topPager->links}</span>
+                </div>
+            </li>
+            {/if}
+        </ul>
+
+        <div class='clear'></div>
+
+        <div class='corner left'></div>
+        <div class='corner right'></div>
+    </div>
+
+    <table cellspacing='0' summary=''>
+        <thead>
+        <tr>
+            <th class='{ox_column_class item=name order=up default=1}'>
+                {ox_column_title item=name order=up default=1 str=Name url=advertiser-index.php}
+            </th>
+            <th class="">
+                {t str=Balance}
+            </th>
+            <th class='last alignRight'>&nbsp;
+
+            </th>
+        </tr>
+        </thead>
+
+        {if !$from|@count}
+        <tbody>
+        <tr class='odd'>
+            <td colspan='3'>&nbsp;</td>
+        </tr>
+        <tr class='even'>
+            <td colspan='3' class="hasPanel">
+                <div class='tableMessage'>
+                    <div class='panel'>
+
+                        {if $hideinactive}
+                        {$aCount.advertisers_hidden} {t str=InactiveAdvertisersHidden}
+                        {else}
+                        {t str=NoClients}
+                        {/if}
+
+                        <div class='corner top-left'></div>
+                        <div class='corner top-right'></div>
+                        <div class='corner bottom-left'></div>
+                        <div class='corner bottom-right'></div>
+                    </div>
+                </div>
+
+                &nbsp;
+            </td>
+        </tr>
+        <tr class='odd'>
+            <td colspan='3'>&nbsp;</td>
+        </tr>
+        </tbody>
+
+        {else}
+        <tbody>
+        {cycle name=bgcolor values="even,odd" assign=bgColor reset=1}
+        {foreach key=clientId item=client from=$from}
+        {cycle name=bgcolor assign=bgColor}
+        <tr class='{$bgColor} {if $client.type == $MARKET_TYPE}systemAdvertiser{/if}'>
+
+            <td>
+                {if $client.type == $MARKET_TYPE} {* no link, just name, and don't display system ids *}
+                <span class='inlineIcon iconAdvertiserSystem'>{$client.clientname|escape:html}</span>
+                {else}
+                <a href='advertiser-edit.php?clientid={$clientId}' class='inlineIcon iconAdvertiser'>{$client.clientname|escape:html}</a>
+                {ox_entity_id type="Advertiser" id=$clientId}
+                {/if}
+            </td>
+            <td>50</td>
+            <td class='alignRight horizontalActions'>
+                <ul class='rowActions'>
+                    <li>
+                        <a href='' class='inlineIcon {if $client.type == $MARKET_TYPE}iconCampaignSystemAdd{else}iconCampaignAdd{/if}'>{t str=Recharge}</a>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        {/foreach}
+        </tbody>
+        {/if}
+        {if !empty($pager->links)}
+        <tbody class="tableFooter">
+        <tr>
+            <td  colspan="3">
+                <div class="pager">
+                    <span class="summary">{$pager->summary}</span>
+                    <span class="controls">{$pager->links}</span>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+        {/if}
+    </table>
+</div>

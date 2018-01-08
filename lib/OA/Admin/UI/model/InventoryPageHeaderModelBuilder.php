@@ -171,6 +171,12 @@ class OA_Admin_UI_Model_InventoryPageHeaderModelBuilder
             case 'channels':
                return array('label' => $GLOBALS['strChannels'], 'headerClass' => 'iconTargetingChannelsLarge', 
                 'newTarget' => $GLOBALS['strChannelsOfWebsite']);
+
+            // newly added
+            case 'budget':
+                return array('label' => $GLOBALS['strBudgetManagement'],
+                    'class' => 'iconAdvertiser', 'headerClass' => 'iconAdvertiserLarge',
+                    'newHeaderClass' => 'iconAdvertiserAddLarge');
         }
     
         return null;

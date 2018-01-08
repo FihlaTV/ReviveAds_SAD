@@ -5863,3 +5863,189 @@ Oct 11 14:37:28 +0000 OX-59de2ca445c78 [     info]  Automatic Maintenance Task C
 Nov 03 09:56:08 +0000 OX-59fc3d2e11c1c [    error]  Sync: No response from the remote XML-RPC server.
 Nov 03 09:56:12 +0000 OX-59fc3d32846d4 [    error]  Sync: No response from the remote XML-RPC server.
 Nov 03 10:04:48 +0000 OX-59fc3f356685c [    error]  Sync: No response from the remote XML-RPC server.
+ 
+Nov 24 14:45:43 +0000 OX-maintenance-5a18309693aac [     info]  Running Maintenance Priority Engine
+Nov 24 14:45:43 +0000 OX-maintenance-5a18309693aac [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_GetRequiredAdImpressionsLifetime
+Nov 24 14:45:43 +0000 OX-maintenance-5a18309693aac [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_GetRequiredAdImpressionsLifetime
+Nov 24 14:45:43 +0000 OX-maintenance-5a18309693aac [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_GetRequiredAdImpressionsDaily
+Nov 24 14:45:43 +0000 OX-maintenance-5a18309693aac [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_GetRequiredAdImpressionsDaily
+Nov 24 14:45:43 +0000 OX-maintenance-5a18309693aac [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_AllocateZoneImpressions
+Nov 24 14:45:43 +0000 OX-maintenance-5a18309693aac [     info]    - Selecting Zones forecasts for all managers for OI from 2017-11-24 14:00:00 to 2017-11-24 14:59:59
+Nov 24 14:45:43 +0000 OX-maintenance-5a18309693aac [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_AllocateZoneImpressions
+Nov 24 14:45:43 +0000 OX-maintenance-5a18309693aac [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_PriorityCompensation
+Nov 24 14:45:43 +0000 OX-maintenance-5a18309693aac [     info]    - Selecting Zones forecasts for all managers for OI from 2017-11-24 14:00:00 to 2017-11-24 14:59:59
+Nov 24 14:45:43 +0000 OX-maintenance-5a18309693aac [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_PriorityCompensation
+Nov 24 14:45:43 +0000 OX-maintenance-5a18309693aac [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_ECPMforContract
+Nov 24 14:45:43 +0000 OX-maintenance-5a18309693aac [     info]  - Selecting All Managers
+Nov 24 14:45:43 +0000 OX-maintenance-5a18309693aac [     info]    - Selecting active campaigns with priority = '9' for manager 1
+Nov 24 14:45:43 +0000 OX-maintenance-5a18309693aac [     info]    - Selecting active campaigns with priority = '8' for manager 1
+Nov 24 14:45:43 +0000 OX-maintenance-5a18309693aac [     info]    - Selecting active campaigns with priority = '7' for manager 1
+Nov 24 14:45:43 +0000 OX-maintenance-5a18309693aac [     info]    - Selecting active campaigns with priority = '6' for manager 1
+Nov 24 14:45:43 +0000 OX-maintenance-5a18309693aac [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_ECPMforContract
+Nov 24 14:45:43 +0000 OX-maintenance-5a18309693aac [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_ECPMforRemnant
+Nov 24 14:45:43 +0000 OX-maintenance-5a18309693aac [     info]  - Selecting Managers with ECPM priority campaigns running
+Nov 24 14:45:43 +0000 OX-maintenance-5a18309693aac [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_ECPMforRemnant
+Nov 24 14:45:43 +0000 OX-maintenance-5a18309693aac [     info]  Maintenance Priority Engine Completed (Started at 2017-11-24 22:45:43 CST)
+Nov 25 04:36:25 +0000 OX-5a18f3473068e [     info]  Running Automatic Maintenance Task
+Nov 25 04:36:25 +0000 OX-5a18f34731bfd [     info]  Automatic Maintenance Task not run: could not acquire lock
+ 
+ 
+Nov 25 04:36:30 +0000 OX-maintenance-5a18f3473068e [     info]  Running Maintenance Engine
+Nov 25 04:36:30 +0000 OX-maintenance-5a18f3473068e [     info]  Running Maintenance Statistics Engine
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]  Task begin: OX_Maintenance_Statistics_Task_SetUpdateRequirements
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]  - Maintenance statistics will be run
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]  - The intermediate table statistics will be updated
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]  - The final table statistics will be updated
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]  Task complete: OX_Maintenance_Statistics_Task_SetUpdateRequirements
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]  Task begin: OX_Maintenance_Statistics_Task_MigrateBucketData
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - The rv_data_bkt_a table is a raw data table. Data logged in real-time, not operation intervals.
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - Accordingly, pruning of the rv_data_bkt_a table will be performed based on data that has a logged date between 
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]        2017-11-24 13:00:00 UTC and 2017-11-24 13:59:59 UTC
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - The rv_data_bkt_a table is a raw data table. Data logged in real-time, not operation intervals.
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - Accordingly, pruning of the rv_data_bkt_a table will be performed based on data that has a logged date between 
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]        2017-11-24 14:00:00 UTC and 2017-11-24 14:59:59 UTC
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - The rv_data_bkt_a table is a raw data table. Data logged in real-time, not operation intervals.
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - Accordingly, pruning of the rv_data_bkt_a table will be performed based on data that has a logged date between 
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]        2017-11-24 15:00:00 UTC and 2017-11-24 15:59:59 UTC
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - The rv_data_bkt_a table is a raw data table. Data logged in real-time, not operation intervals.
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - Accordingly, pruning of the rv_data_bkt_a table will be performed based on data that has a logged date between 
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]        2017-11-24 16:00:00 UTC and 2017-11-24 16:59:59 UTC
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - The rv_data_bkt_a table is a raw data table. Data logged in real-time, not operation intervals.
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - Accordingly, pruning of the rv_data_bkt_a table will be performed based on data that has a logged date between 
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]        2017-11-24 17:00:00 UTC and 2017-11-24 17:59:59 UTC
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - The rv_data_bkt_a table is a raw data table. Data logged in real-time, not operation intervals.
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - Accordingly, pruning of the rv_data_bkt_a table will be performed based on data that has a logged date between 
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]        2017-11-24 18:00:00 UTC and 2017-11-24 18:59:59 UTC
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - The rv_data_bkt_a table is a raw data table. Data logged in real-time, not operation intervals.
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - Accordingly, pruning of the rv_data_bkt_a table will be performed based on data that has a logged date between 
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]        2017-11-24 19:00:00 UTC and 2017-11-24 19:59:59 UTC
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - The rv_data_bkt_a table is a raw data table. Data logged in real-time, not operation intervals.
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - Accordingly, pruning of the rv_data_bkt_a table will be performed based on data that has a logged date between 
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]        2017-11-24 20:00:00 UTC and 2017-11-24 20:59:59 UTC
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - The rv_data_bkt_a table is a raw data table. Data logged in real-time, not operation intervals.
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - Accordingly, pruning of the rv_data_bkt_a table will be performed based on data that has a logged date between 
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]        2017-11-24 21:00:00 UTC and 2017-11-24 21:59:59 UTC
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - The rv_data_bkt_a table is a raw data table. Data logged in real-time, not operation intervals.
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - Accordingly, pruning of the rv_data_bkt_a table will be performed based on data that has a logged date between 
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]        2017-11-24 22:00:00 UTC and 2017-11-24 22:59:59 UTC
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - The rv_data_bkt_a table is a raw data table. Data logged in real-time, not operation intervals.
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - Accordingly, pruning of the rv_data_bkt_a table will be performed based on data that has a logged date between 
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]        2017-11-24 23:00:00 UTC and 2017-11-24 23:59:59 UTC
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - The rv_data_bkt_a table is a raw data table. Data logged in real-time, not operation intervals.
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - Accordingly, pruning of the rv_data_bkt_a table will be performed based on data that has a logged date between 
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]        2017-11-25 00:00:00 UTC and 2017-11-25 00:59:59 UTC
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - The rv_data_bkt_a table is a raw data table. Data logged in real-time, not operation intervals.
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - Accordingly, pruning of the rv_data_bkt_a table will be performed based on data that has a logged date between 
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]        2017-11-25 01:00:00 UTC and 2017-11-25 01:59:59 UTC
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - The rv_data_bkt_a table is a raw data table. Data logged in real-time, not operation intervals.
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - Accordingly, pruning of the rv_data_bkt_a table will be performed based on data that has a logged date between 
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]        2017-11-25 02:00:00 UTC and 2017-11-25 02:59:59 UTC
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - The rv_data_bkt_a table is a raw data table. Data logged in real-time, not operation intervals.
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - Accordingly, pruning of the rv_data_bkt_a table will be performed based on data that has a logged date between 
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]        2017-11-25 03:00:00 UTC and 2017-11-25 03:59:59 UTC
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - The rv_data_bkt_a_var table is a raw data table. Data logged in real-time, not operation intervals.
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - Accordingly, pruning of the rv_data_bkt_a_var table will be performed based on data that has a logged date between 
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]        2017-11-24 13:00:00 UTC and 2017-11-24 13:59:59 UTC
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - The rv_data_bkt_a_var table is a raw data table. Data logged in real-time, not operation intervals.
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - Accordingly, pruning of the rv_data_bkt_a_var table will be performed based on data that has a logged date between 
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]        2017-11-24 14:00:00 UTC and 2017-11-24 14:59:59 UTC
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - The rv_data_bkt_a_var table is a raw data table. Data logged in real-time, not operation intervals.
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - Accordingly, pruning of the rv_data_bkt_a_var table will be performed based on data that has a logged date between 
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]        2017-11-24 15:00:00 UTC and 2017-11-24 15:59:59 UTC
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - The rv_data_bkt_a_var table is a raw data table. Data logged in real-time, not operation intervals.
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - Accordingly, pruning of the rv_data_bkt_a_var table will be performed based on data that has a logged date between 
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]        2017-11-24 16:00:00 UTC and 2017-11-24 16:59:59 UTC
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - The rv_data_bkt_a_var table is a raw data table. Data logged in real-time, not operation intervals.
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - Accordingly, pruning of the rv_data_bkt_a_var table will be performed based on data that has a logged date between 
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]        2017-11-24 17:00:00 UTC and 2017-11-24 17:59:59 UTC
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - The rv_data_bkt_a_var table is a raw data table. Data logged in real-time, not operation intervals.
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - Accordingly, pruning of the rv_data_bkt_a_var table will be performed based on data that has a logged date between 
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]        2017-11-24 18:00:00 UTC and 2017-11-24 18:59:59 UTC
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - The rv_data_bkt_a_var table is a raw data table. Data logged in real-time, not operation intervals.
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - Accordingly, pruning of the rv_data_bkt_a_var table will be performed based on data that has a logged date between 
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]        2017-11-24 19:00:00 UTC and 2017-11-24 19:59:59 UTC
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - The rv_data_bkt_a_var table is a raw data table. Data logged in real-time, not operation intervals.
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - Accordingly, pruning of the rv_data_bkt_a_var table will be performed based on data that has a logged date between 
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]        2017-11-24 20:00:00 UTC and 2017-11-24 20:59:59 UTC
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - The rv_data_bkt_a_var table is a raw data table. Data logged in real-time, not operation intervals.
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - Accordingly, pruning of the rv_data_bkt_a_var table will be performed based on data that has a logged date between 
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]        2017-11-24 21:00:00 UTC and 2017-11-24 21:59:59 UTC
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - The rv_data_bkt_a_var table is a raw data table. Data logged in real-time, not operation intervals.
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - Accordingly, pruning of the rv_data_bkt_a_var table will be performed based on data that has a logged date between 
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]        2017-11-24 22:00:00 UTC and 2017-11-24 22:59:59 UTC
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - The rv_data_bkt_a_var table is a raw data table. Data logged in real-time, not operation intervals.
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - Accordingly, pruning of the rv_data_bkt_a_var table will be performed based on data that has a logged date between 
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]        2017-11-24 23:00:00 UTC and 2017-11-24 23:59:59 UTC
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - The rv_data_bkt_a_var table is a raw data table. Data logged in real-time, not operation intervals.
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - Accordingly, pruning of the rv_data_bkt_a_var table will be performed based on data that has a logged date between 
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]        2017-11-25 00:00:00 UTC and 2017-11-25 00:59:59 UTC
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - The rv_data_bkt_a_var table is a raw data table. Data logged in real-time, not operation intervals.
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - Accordingly, pruning of the rv_data_bkt_a_var table will be performed based on data that has a logged date between 
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]        2017-11-25 01:00:00 UTC and 2017-11-25 01:59:59 UTC
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - The rv_data_bkt_a_var table is a raw data table. Data logged in real-time, not operation intervals.
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - Accordingly, pruning of the rv_data_bkt_a_var table will be performed based on data that has a logged date between 
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]        2017-11-25 02:00:00 UTC and 2017-11-25 02:59:59 UTC
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - The rv_data_bkt_a_var table is a raw data table. Data logged in real-time, not operation intervals.
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]      - Accordingly, pruning of the rv_data_bkt_a_var table will be performed based on data that has a logged date between 
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]        2017-11-25 03:00:00 UTC and 2017-11-25 03:59:59 UTC
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]  Task complete: OX_Maintenance_Statistics_Task_MigrateBucketData
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]  Task begin: OX_Maintenance_Statistics_Task_DeDuplicateConversions
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]  Task complete: OX_Maintenance_Statistics_Task_DeDuplicateConversions
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]  Task begin: OX_Maintenance_Statistics_Task_ManageConversions
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]  Task complete: OX_Maintenance_Statistics_Task_ManageConversions
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]  Task begin: OX_Maintenance_Statistics_Task_SummariseFinal
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]  Task complete: OX_Maintenance_Statistics_Task_SummariseFinal
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]  Task begin: OX_Maintenance_Statistics_Task_LogCompletion
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]  Task complete: OX_Maintenance_Statistics_Task_LogCompletion
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]  Task begin: OX_Maintenance_Statistics_Task_ManageCampaigns
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]  - Managing (activating/deactivating) campaigns
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]  Task complete: OX_Maintenance_Statistics_Task_ManageCampaigns
+Nov 25 04:36:31 +0000 OX-maintenance-5a18f3473068e [     info]  Maintenance Statistics Engine Completed (Started at 2017-11-25 04:36:30 UTC)
+Nov 25 04:36:31 +0000 OX-5a18f3473068e [     info]  Running Midnight Maintenance Tasks
+Nov 25 04:36:32 +0000 OX-5a18f3473068e [     info]  Begin pruning old records from data_summary_ad_zone_assoc
+Nov 25 04:36:32 +0000 OX-5a18f3473068e [     info]  Finished pruning old records from data_summary_ad_zone_assoc: 0 records deleted
+Nov 25 04:36:32 +0000 OX-5a18f3473068e [     info]  Begin pruning records for expired inactive campaigns from data_summary_ad_zone_assoc
+Nov 25 04:36:32 +0000 OX-5a18f3473068e [     info]  Finished pruning expired inactive campaigns from data_summary_ad_zone_assoc: 0 records deleted
+Nov 25 04:36:32 +0000 OX-5a18f3473068e [     info]  Begin pruning records for completed inactive campaigns from data_summary_ad_zone_assoc
+Nov 25 04:36:32 +0000 OX-5a18f3473068e [     info]  Table rv_data_summary_ad_zone_assoc overhead (number of allocated but unused bytes) = 0
+Nov 25 04:36:32 +0000 OX-5a18f3473068e [     info]  Midnight Maintenance Tasks Completed
+Nov 25 04:36:32 +0000 OX-maintenance-5a18f3473068e [     info]  Running Maintenance Priority Engine
+Nov 25 04:36:34 +0000 OX-maintenance-5a18f3473068e [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_GetRequiredAdImpressionsLifetime
+Nov 25 04:36:34 +0000 OX-maintenance-5a18f3473068e [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_GetRequiredAdImpressionsLifetime
+Nov 25 04:36:34 +0000 OX-maintenance-5a18f3473068e [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_GetRequiredAdImpressionsDaily
+Nov 25 04:36:34 +0000 OX-maintenance-5a18f3473068e [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_GetRequiredAdImpressionsDaily
+Nov 25 04:36:34 +0000 OX-maintenance-5a18f3473068e [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_AllocateZoneImpressions
+Nov 25 04:36:34 +0000 OX-maintenance-5a18f3473068e [     info]    - Selecting Zones forecasts for all managers for OI from 2017-11-25 04:00:00 to 2017-11-25 04:59:59
+Nov 25 04:36:34 +0000 OX-maintenance-5a18f3473068e [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_AllocateZoneImpressions
+Nov 25 04:36:34 +0000 OX-maintenance-5a18f3473068e [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_PriorityCompensation
+Nov 25 04:36:34 +0000 OX-maintenance-5a18f3473068e [     info]    - Selecting Zones forecasts for all managers for OI from 2017-11-25 04:00:00 to 2017-11-25 04:59:59
+Nov 25 04:36:34 +0000 OX-maintenance-5a18f3473068e [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_PriorityCompensation
+Nov 25 04:36:34 +0000 OX-maintenance-5a18f3473068e [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_ECPMforContract
+Nov 25 04:36:34 +0000 OX-maintenance-5a18f3473068e [     info]  - Selecting All Managers
+Nov 25 04:36:34 +0000 OX-maintenance-5a18f3473068e [     info]    - Selecting active campaigns with priority = '9' for manager 1
+Nov 25 04:36:34 +0000 OX-maintenance-5a18f3473068e [     info]    - Selecting active campaigns with priority = '8' for manager 1
+Nov 25 04:36:34 +0000 OX-maintenance-5a18f3473068e [     info]    - Selecting active campaigns with priority = '7' for manager 1
+Nov 25 04:36:34 +0000 OX-maintenance-5a18f3473068e [     info]    - Selecting active campaigns with priority = '6' for manager 1
+Nov 25 04:36:34 +0000 OX-maintenance-5a18f3473068e [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_ECPMforContract
+Nov 25 04:36:34 +0000 OX-maintenance-5a18f3473068e [     info]  Task begin: OA_Maintenance_Priority_AdServer_Task_ECPMforRemnant
+Nov 25 04:36:34 +0000 OX-maintenance-5a18f3473068e [     info]  - Selecting Managers with ECPM priority campaigns running
+Nov 25 04:36:34 +0000 OX-maintenance-5a18f3473068e [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_ECPMforRemnant
+Nov 25 04:36:34 +0000 OX-maintenance-5a18f3473068e [     info]  Maintenance Priority Engine Completed (Started at 2017-11-25 04:36:30 UTC)
+Nov 25 04:36:34 +0000 OX-maintenance-5a18f3473068e [     info]  Maintenance Engine Completed (Started at 2017-11-25 04:36:30 UTC, taking 00:00:04)
+Nov 25 04:36:34 +0000 OX-5a18f3473068e [     info]  Delaying Revive Adserver sync process by 23 seconds.
+Nov 25 04:36:59 +0000 OX-5a18f3473068e [     info]  Sync: updates found!
+Nov 25 04:36:59 +0000 OX-5a18f3473068e [     info]  Finished Revive Adserver Sync process.
+Nov 25 04:36:59 +0000 OX-5a18f3473068e [     info]  Automatic Maintenance Task Completed
+Jan 06 13:58:56 +0000 OX-5a50d61631e9c [    error]  Sync: No response from the remote XML-RPC server.
+Jan 07 13:37:02 +0000 OX-5a522274866f3 [    error]  Sync: No response from the remote XML-RPC server.
+Jan 07 14:01:16 +0000 OX-5a5228223e775 [    error]  Sync: No response from the remote XML-RPC server.
+Jan 07 14:50:08 +0000 OX-5a5233994880b [  warning]  Smarty error: unable to read resource: &quot;budget-management.html&quot;
+Jan 07 14:51:03 +0000 OX-5a5233d66698e [  warning]  Smarty error: unable to read resource: &quot;budget-management.html&quot;
+Jan 07 14:54:22 +0000 OX-5a52349e59c1c [  warning]  Smarty error: unable to read resource: &quot;budget-management.html&quot;
+Jan 07 14:54:35 +0000 OX-5a5234aaa3748 [  warning]  Smarty error: unable to read resource: &quot;budget-management.html&quot;
+Jan 08 03:27:07 +0000 OX-5a52e50b415e1 [  warning]  Smarty error: unable to read resource: &quot;budget-management.html&quot;
+Jan 08 03:29:13 +0000 OX-5a52e5894b195 [  warning]  Smarty error: unable to read resource: &quot;budget-management.html&quot;
+Jan 08 03:35:46 +0000 OX-5a52e7121e449 [  warning]  Smarty error: unable to read resource: &quot;budget-management.html&quot;
+Jan 08 04:19:12 +0000 OX-5a52f13ca6bd1 [    error]  Smarty error: [in budget-management.html line 83]: syntax error: foreach: missing 'from' attribute (Smarty_Compiler.class.php, line 1163)
+Jan 08 04:42:11 +0000 OX-5a52f69f70050 [  warning]  Smarty error: unable to read resource: &quot;budget-management-list.html&quot;
+Jan 08 04:43:13 +0000 OX-5a52f6dd17b2a [  warning]  Smarty error: unable to read resource: &quot;budget-management-list.html&quot;

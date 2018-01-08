@@ -43,7 +43,11 @@
                     </tr>
                     <tr height="24">
                         <td>&nbsp;</td>
-                        <td><input type="submit" name="login" id="login" value="{t str=Login}"{tabindex} /></td>
+                        <td>
+                            <input type="submit" name="login" id="login" value="{t str=Login}"{tabindex} />
+                            <input type="button" name="register" id="register" value="{t str=Register}"{tabindex}
+                                   onclick="location.href='register.php'"/>
+                        </td>
                     </tr>
                 </table>
                 <img class="break" src="{$assetPath|escape}/images/break-el.gif" width="400" height="1" vspace="8" /><br />

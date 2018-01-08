@@ -95,6 +95,7 @@ function _buildNavigation($accountType)
             $oMenu->add(new OA_Admin_Menu_Section("plugin-index", 'Plugins', "plugin-index.php"));
 
         break;
+        // The first level of menu is header navigation. The second level is sidebar navigation.
         case OA_ACCOUNT_MANAGER:
             if ($GLOBALS['_MAX']['CONF']['ui']['dashboardEnabled'] && $aConf['sync']['checkForUpdates']) {
                 $oMenu->add(new OA_Admin_Menu_Section("dashboard", 'Home', "dashboard.php", false, "dashboard"));
@@ -198,12 +199,16 @@ function _buildNavigation($accountType)
                 $oMenu->addTo('affiliate-channels', new OA_Admin_Menu_Section('channel-edit-affiliate', 'ChannelProperties', 'channel-edit.php?affiliateid={affiliateid}&channelid={channelid}', false, "inventory/publishersAndZones/channels/editChannel"));
                 $oMenu->addTo('affiliate-channels', new OA_Admin_Menu_Section('channel-affiliate-acl', 'ChannelLimitations', 'channel-acl.php?affiliateid={affiliateid}&channelid={channelid}', false, "inventory/publishersAndZones/channels/editChannel/deliveryOptions"));
 
-
             if (empty($aConf['ui']['disableDirectSelection'])) {
                 $oMenu->addTo("inventory", new OA_Admin_Menu_Section("admin-generate", 'GenerateBannercode', "admin-generate.php", false, ""));
             }
+
+
             $oMenu->addTo("inventory", new OA_Admin_Menu_Section("agency-access", 'UserAccess', "agency-access.php?agencyid={agencyid}", false, "", array(array(OA_ACCOUNT_MANAGER => OA_PERM_SUPER_ACCOUNT))));
                 $oMenu->addTo("agency-access", new OA_Admin_Menu_Section("agency-user", 'UserProperties', "agency-user.php?userid={userid}&agencyid={agencyid}", false, ""));
+
+            // newly add
+            $oMenu->addTo("inventory", new OA_Admin_Menu_Section("budget-management", 'BudgetManagement', "budget-management.php", false, ""));
 
             $oMenu->add(new OA_Admin_Menu_Section("account-index", 'Preferences', "account-index.php", false, "settings"));
                 $oMenu->addTo("account-index", new OA_Admin_Menu_Section("account-user-index", 'UserPreferences', "account-user-index.php", false, ""));
@@ -213,6 +218,9 @@ function _buildNavigation($accountType)
                     $oMenu->addTo("channel-index", new OA_Admin_Menu_Section("channel-edit_new", 'AddNewChannel', "channel-edit.php?agencyid={agencyid}", true, "settings/channelManagement/addChannel"));
                     $oMenu->addTo("channel-index", new OA_Admin_Menu_Section("channel-edit", 'ChannelProperties', "channel-edit.php?agencyid={agencyid}&channelid={channelid}", false, "settings/channelManagement/editChannel"));
                     $oMenu->addTo("channel-index", new OA_Admin_Menu_Section("channel-acl", 'ChannelLimitations', "channel-acl.php?agencyid={agencyid}&channelid={channelid}", false, "settings/channelManagement/editChannel/deliveryOptions"));
+                $oMenu->addTo("account-index", new OA_Admin_Menu_Section("account-budget-index", 'AccountBudget', "account-user-index.php", false, ""));
+
+
             break;
         case OA_ACCOUNT_TRAFFICKER:
             // Note: The stats screens haven't been updated to use the new menuing names...

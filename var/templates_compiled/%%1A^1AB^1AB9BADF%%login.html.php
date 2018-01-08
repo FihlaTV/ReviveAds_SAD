@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.18, created on 2017-09-19 07:23:57
+<?php /* Smarty version 2.6.18, created on 2018-01-07 13:28:46
          compiled from login.html */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('modifier', 'escape', 'login.html', 15, false),array('function', 't', 'login.html', 21, false),array('function', 'tabindex', 'login.html', 38, false),array('function', 'phpAds_ShowBreak', 'login.html', 61, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'escape', 'login.html', 15, false),array('function', 't', 'login.html', 21, false),array('function', 'tabindex', 'login.html', 38, false),array('function', 'phpAds_ShowBreak', 'login.html', 65, false),)), $this); ?>
 
 <?php if ($this->_tpl_vars['uiEnabled']): ?>
 <br />
@@ -49,9 +49,15 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'escape', 'l
                     </tr>
                     <tr height="24">
                         <td>&nbsp;</td>
-                        <td><input type="submit" name="login" id="login" value="<?php echo OA_Admin_Template::_function_t(array('str' => 'Login'), $this);?>
+                        <td>
+                            <input type="submit" name="login" id="login" value="<?php echo OA_Admin_Template::_function_t(array('str' => 'Login'), $this);?>
 "<?php echo OA_Admin_Template::_function_tabindex(array(), $this);?>
- /></td>
+ />
+                            <input type="button" name="register" id="register" value="<?php echo OA_Admin_Template::_function_t(array('str' => 'Register'), $this);?>
+"<?php echo OA_Admin_Template::_function_tabindex(array(), $this);?>
+
+                                   onclick="location.href='register.php'"/>
+                        </td>
                     </tr>
                 </table>
                 <img class="break" src="<?php echo ((is_array($_tmp=$this->_tpl_vars['assetPath'])) ? $this->_run_mod_handler('escape', true, $_tmp) : smarty_modifier_escape($_tmp)); ?>

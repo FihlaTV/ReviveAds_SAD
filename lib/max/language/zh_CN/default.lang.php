@@ -221,6 +221,7 @@ $GLOBALS['strUnlinkUserConfirmBody']    = "您确定要从用户组中删除该�
 // Login & Permissions
 $GLOBALS['strUserAccess']               = "用户";
 $GLOBALS['strAdminAccess']              = "管理员权限";
+$GLOBALS['strBudgetManagement']         = "预算管理";
 $GLOBALS['strUserProperties']           = "用户";
 $GLOBALS['strLinkNewUser']              = "Link New User";
 $GLOBALS['strPermissions']              = "权限";
@@ -369,6 +370,10 @@ $GLOBALS['strAllowCreateAccounts']              = "添加新的用户";
 $GLOBALS['strCsvImportConversions']             = "Allow this user to import offline conversions";
 $GLOBALS['strAdvertiserLimitation']             = "禁止在同一个页面上重复投放属于该客户的素材";
 $GLOBALS['strAllowAuditTrailAccess']            = "查看日志";
+
+//Budget(newly added)
+$GLOBALS['strRecharge']                         = "充值";
+$GLOBALS['strBalance']                          = "账户余额";
 
 // Campaign
 $GLOBALS['strCampaign']                     = "项目";
