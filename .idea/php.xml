@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/lib/vendor/composer" />
+      <path value="$PROJECT_DIR$/lib/vendor/sinergi/browser-detector" />
+    </include_path>
+  </component>
   <component name="PhpInterpreters">
     <interpreters>
       <interpreter home="sftp://vagrant@127.0.0.1:2222/usr/bin/php" id="a7195a7e-048a-480e-9a17-416355ea9392" name="Remote PHP 5.6 deployment" debugger_id="php.debugger.XDebug">

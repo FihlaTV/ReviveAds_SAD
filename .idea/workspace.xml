@@ -2,36 +2,103 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c8e2a36-28fc-4a19-ba62-e51c443f38fa" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/templates/admin/budget-management-list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/templates/admin/budget-management.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/admin/budget-management.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/admin/register.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/OA/Admin/Menu/config.php" afterPath="$PROJECT_DIR$/lib/OA/Admin/Menu/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/OA/Admin/UI/model/InventoryPageHeaderModelBuilder.php" afterPath="$PROJECT_DIR$/lib/OA/Admin/UI/model/InventoryPageHeaderModelBuilder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/max/language/en/default.lang.php" afterPath="$PROJECT_DIR$/lib/max/language/en/default.lang.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/max/language/zh_CN/default.lang.php" afterPath="$PROJECT_DIR$/lib/max/language/zh_CN/default.lang.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/templates/admin/login.html" afterPath="$PROJECT_DIR$/lib/templates/admin/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/05f3e7be2d87e7c5bd23cc0fe209ceb9^%%87^877^8778D184%%graph.html" afterPath="$PROJECT_DIR$/var/cache/05f3e7be2d87e7c5bd23cc0fe209ceb9^%%87^877^8778D184%%graph.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/05f3e7be2d87e7c5bd23cc0fe209ceb9^%%EC^ECD^ECDFE081%%passthrough.html" afterPath="$PROJECT_DIR$/var/cache/05f3e7be2d87e7c5bd23cc0fe209ceb9^%%EC^ECD^ECDFE081%%passthrough.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/c6a3492eb43a168d483185a43b163b28^%%87^877^8778D184%%graph.html" afterPath="$PROJECT_DIR$/var/cache/c6a3492eb43a168d483185a43b163b28^%%87^877^8778D184%%graph.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/cache_10.108.121.211_MANAGER_Menu" afterPath="$PROJECT_DIR$/var/cache/cache_10.108.121.211_MANAGER_Menu" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/cache_7d8fe8948c3655e2d4ce92d5732e91ed_7f9c6c304cbf43689149d1831ae0773b" afterPath="$PROJECT_DIR$/var/cache/cache_7d8fe8948c3655e2d4ce92d5732e91ed_7f9c6c304cbf43689149d1831ae0773b" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/cache_7d8fe8948c3655e2d4ce92d5732e91ed_c07bef3fb0b8348d9a2fea644e234570" afterPath="$PROJECT_DIR$/var/cache/cache_7d8fe8948c3655e2d4ce92d5732e91ed_c07bef3fb0b8348d9a2fea644e234570" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/cache_7d8fe8948c3655e2d4ce92d5732e91ed_f801d8d9aefddd205e584db9f227d717" afterPath="$PROJECT_DIR$/var/cache/cache_7d8fe8948c3655e2d4ce92d5732e91ed_f801d8d9aefddd205e584db9f227d717" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/deliverycache_1f8f5a0e65f4db13c85cbc2c33f92989.php" afterPath="$PROJECT_DIR$/var/cache/deliverycache_1f8f5a0e65f4db13c85cbc2c33f92989.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/deliverycache_71f723c99f0fa57d6d1bf9da676564a0.php" afterPath="$PROJECT_DIR$/var/cache/deliverycache_71f723c99f0fa57d6d1bf9da676564a0.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/deliverycache_c5dc2fea2ecd8475485a62d48bc8b4cb.php" afterPath="$PROJECT_DIR$/var/cache/deliverycache_c5dc2fea2ecd8475485a62d48bc8b4cb.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/deliverycache_d01819d97eb68e4682494c1830b902b1.php" afterPath="$PROJECT_DIR$/var/cache/deliverycache_d01819d97eb68e4682494c1830b902b1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/deliverycache_d6d75811fc17cd0a4947879c521814a3.php" afterPath="$PROJECT_DIR$/var/cache/deliverycache_d6d75811fc17cd0a4947879c521814a3.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/deliverycache_dd151bf1c3d59edc4f497e7c3b5a8580.php" afterPath="$PROJECT_DIR$/var/cache/deliverycache_dd151bf1c3d59edc4f497e7c3b5a8580.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/deliverycache_e6fef36d885f2798a33debe9acb55184.php" afterPath="$PROJECT_DIR$/var/cache/deliverycache_e6fef36d885f2798a33debe9acb55184.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/deliverycache_f6ae63bf116eee8ec75fadda036dcc5c.php" afterPath="$PROJECT_DIR$/var/cache/deliverycache_f6ae63bf116eee8ec75fadda036dcc5c.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/minify_43b645e2a4cd17d47eba548094d57e6a" afterPath="$PROJECT_DIR$/var/cache/minify_43b645e2a4cd17d47eba548094d57e6a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/minify_f730fea43baa7b050fda344bc872c723" afterPath="$PROJECT_DIR$/var/cache/minify_f730fea43baa7b050fda344bc872c723" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/debug.log" afterPath="$PROJECT_DIR$/var/debug.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/templates_compiled/%%1A^1AB^1AB9BADF%%login.html.php" afterPath="$PROJECT_DIR$/var/templates_compiled/%%1A^1AB^1AB9BADF%%login.html.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/templates_compiled/%%4E^4EF^4EF2FF8A%%players.html.php" afterPath="$PROJECT_DIR$/var/templates_compiled/%%4E^4EF^4EF2FF8A%%players.html.php" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/reviveads.iml" afterPath="$PROJECT_DIR$/.idea/reviveads.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/var/cache/05f3e7be2d87e7c5bd23cc0fe209ceb9^%%87^877^8778D184%%graph.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/05f3e7be2d87e7c5bd23cc0fe209ceb9^%%EC^ECD^ECDFE081%%passthrough.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/562279f24d1cc6a381078788cbffe34c^%%87^877^8778D184%%graph.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/562279f24d1cc6a381078788cbffe34c^%%EC^ECD^ECDFE081%%passthrough.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/c6a3492eb43a168d483185a43b163b28^%%87^877^8778D184%%graph.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/c6a3492eb43a168d483185a43b163b28^%%EC^ECD^ECDFE081%%passthrough.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_10.108.121.211_ADMIN_Menu" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_10.108.121.211_ComponentHooks_Plugins" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_10.108.121.211_MANAGER_Menu" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_127.0.0.1_ADMIN_Menu" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_127.0.0.1_ComponentHooks_Plugins" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_127.0.0.1_MANAGER_Menu" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_693c4584d34cf5275476d8d67084d721_07c0b71d598d608ed8ec6b38f591cc73" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_693c4584d34cf5275476d8d67084d721_110b2c4f3f3470501f0ff668120dc516" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_693c4584d34cf5275476d8d67084d721_238f0abd6efbe4bf6a7f601972bfde2d" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_693c4584d34cf5275476d8d67084d721_24e942c45eeaf6bfa38b28ea77253804" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_693c4584d34cf5275476d8d67084d721_25495165642e7f754d8896cd85ce7572" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_693c4584d34cf5275476d8d67084d721_28449266e4090bfb59c4b607e83ead17" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_693c4584d34cf5275476d8d67084d721_3289f698c19c142db2cc0f489ad39782" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_693c4584d34cf5275476d8d67084d721_35b42817964ed5f79cc212feb97adf79" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_693c4584d34cf5275476d8d67084d721_37e9c24ca1fdf8de11caadfe15103d24" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_693c4584d34cf5275476d8d67084d721_5dd36905c97564501e8f80058ee12486" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_693c4584d34cf5275476d8d67084d721_64884e50a04043036b08cdf05d4217ab" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_693c4584d34cf5275476d8d67084d721_66d6218bac98467b45e3dcad6d7cea63" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_693c4584d34cf5275476d8d67084d721_716f65c3a79825e40df9d03273a2ac73" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_693c4584d34cf5275476d8d67084d721_78e0f6d4045a09531a13847a011ee8c8" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_693c4584d34cf5275476d8d67084d721_8906cbc0dc9ce81e2afed4bd1a53f5e1" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_693c4584d34cf5275476d8d67084d721_9737ed7ab39b609898277924e87423ff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_693c4584d34cf5275476d8d67084d721_9df8ac41972582d70d55ad521eb21f3b" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_693c4584d34cf5275476d8d67084d721_a93e80d5ee01207a4d0a7ba0fc189e47" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_693c4584d34cf5275476d8d67084d721_ad98bde359c18eaa78efcedd82d02988" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_693c4584d34cf5275476d8d67084d721_adc8e02f39e9d45c47642d25f949562f" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_693c4584d34cf5275476d8d67084d721_b002d1d3bce51e15dfa559d0d705b364" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_693c4584d34cf5275476d8d67084d721_b788e6c42353b4b802b6e6cdb0e541bc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_693c4584d34cf5275476d8d67084d721_b78a9f91152760208e74db097bedba8c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_693c4584d34cf5275476d8d67084d721_baec1f788251897f921087fc3439e1d7" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_693c4584d34cf5275476d8d67084d721_c3acac085376e290f0797eb3dadd9aee" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_693c4584d34cf5275476d8d67084d721_debb7e4b2072d57336245e65bcada277" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_693c4584d34cf5275476d8d67084d721_f0be532c36ec24c8f3541fd5ee5e278e" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_7d8fe8948c3655e2d4ce92d5732e91ed_0fc22235003c16adcadbd689228aa35b" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_7d8fe8948c3655e2d4ce92d5732e91ed_1ae076a88d0af3b12c243961b9746dcb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_7d8fe8948c3655e2d4ce92d5732e91ed_21dae3204a584456898eee5a449ecaaf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_7d8fe8948c3655e2d4ce92d5732e91ed_31cb2791ce4e8b88e761690b1bb2925d" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_7d8fe8948c3655e2d4ce92d5732e91ed_34721066d9317494f1aeeb321146843b" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_7d8fe8948c3655e2d4ce92d5732e91ed_5886de691e39602ad47fa3006706c7fc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_7d8fe8948c3655e2d4ce92d5732e91ed_69cf03bb01cb533d7fe3163cedc27092" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_7d8fe8948c3655e2d4ce92d5732e91ed_728c79a9f75a10c6bd224c483e5ff95a" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_7d8fe8948c3655e2d4ce92d5732e91ed_7a0cb66f7d6bbaf3885c3b6429b62496" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_7d8fe8948c3655e2d4ce92d5732e91ed_7f9c6c304cbf43689149d1831ae0773b" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_7d8fe8948c3655e2d4ce92d5732e91ed_908b726e6d293283d782187775754ae3" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_7d8fe8948c3655e2d4ce92d5732e91ed_968077cc072c9444c745d84832b57653" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_7d8fe8948c3655e2d4ce92d5732e91ed_981364592daaf71f08f00ab98be3a4ec" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_7d8fe8948c3655e2d4ce92d5732e91ed_a6d38b6ed8827aed089dddc9768849ca" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_7d8fe8948c3655e2d4ce92d5732e91ed_acd0960dff0da29a23aff1767fac0779" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_7d8fe8948c3655e2d4ce92d5732e91ed_b95eac66785f5749e763d4b82d213f32" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_7d8fe8948c3655e2d4ce92d5732e91ed_bc663fbd91958297506b8c29b878e0b2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_7d8fe8948c3655e2d4ce92d5732e91ed_c07bef3fb0b8348d9a2fea644e234570" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_7d8fe8948c3655e2d4ce92d5732e91ed_db30c0d229bb6315db89444eef2bc029" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_7d8fe8948c3655e2d4ce92d5732e91ed_dee8ab4edc22836adcf457ef869e3139" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_7d8fe8948c3655e2d4ce92d5732e91ed_e84793fe46702760700cac2be1362554" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_7d8fe8948c3655e2d4ce92d5732e91ed_f662725e2942e530a25a161e2a278b0c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/cache_7d8fe8948c3655e2d4ce92d5732e91ed_f801d8d9aefddd205e584db9f227d717" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/deliverycache_1c8c5031430a9c1f28b5e305667c6f37.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/deliverycache_1f8f5a0e65f4db13c85cbc2c33f92989.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/deliverycache_28bae2488ffa1916944a22d722ac4e65.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/deliverycache_45b04a1e49feca1ec68929ede3a08e55.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/deliverycache_52104cdbfb8d1555485b7c57e22b1c2a.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/deliverycache_6ad6e5730bc8858e40072ecda8b4d5c7.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/deliverycache_7037a103b98b85fb896c8ceee09734ff.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/deliverycache_71f723c99f0fa57d6d1bf9da676564a0.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/deliverycache_781a35faffe471a758082f83923ed3da.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/deliverycache_b370287f36f13497d7ffa75e7e81b888.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/deliverycache_bd9c1d20d8fc897fe40553b07489d047.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/deliverycache_c5329de8ce6687b1c62a922e2fbbc980.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/deliverycache_c5dc2fea2ecd8475485a62d48bc8b4cb.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/deliverycache_d01819d97eb68e4682494c1830b902b1.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/deliverycache_d6d75811fc17cd0a4947879c521814a3.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/deliverycache_dc6255e29ccc26d9cc045d3256431480.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/deliverycache_dd151bf1c3d59edc4f497e7c3b5a8580.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/deliverycache_e1fa9933e3b208acbdd652bee5f0a53c.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/deliverycache_e6fef36d885f2798a33debe9acb55184.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/deliverycache_eadf01193cfd947d8acb7b2c29e7fd96.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/deliverycache_f6ae63bf116eee8ec75fadda036dcc5c.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/deliverycache_f9ae63441c88ecfc7ab1dcf131021987.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/fd6f9330ac0812533645e619fd2fb222^%%87^877^8778D184%%graph.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/fd6f9330ac0812533645e619fd2fb222^%%EC^ECD^ECDFE081%%passthrough.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/minify_43b645e2a4cd17d47eba548094d57e6a" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/minify_43b645e2a4cd17d47eba548094d57e6a.zd" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/minify_43b645e2a4cd17d47eba548094d57e6a.zg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/minify_f730fea43baa7b050fda344bc872c723" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/minify_f730fea43baa7b050fda344bc872c723.zd" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/cache/minify_f730fea43baa7b050fda344bc872c723.zg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/var/debug.log" afterPath="$PROJECT_DIR$/var/debug.log" />
+      <change beforePath="$PROJECT_DIR$/var/default.conf.php" afterPath="$PROJECT_DIR$/var/default.conf.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,6 +106,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -69,55 +139,54 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="budget-management.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/admin/budget-management.php">
+      <file leaf-file-name="banner-edit.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/admin/banner-edit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="131" column="0" lean-forward="true" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
-              <folding>
-                <element signature="e#7#558#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="advertiser-index-list.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/templates/admin/advertiser-index-list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="87" column="30" lean-forward="true" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="30" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="advertiser-index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/templates/admin/advertiser-index.html">
+      <file leaf-file-name="lib-storage.inc.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/admin/lib-storage.inc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="1848">
+              <caret line="92" column="1" lean-forward="false" selection-start-line="92" selection-start-column="1" selection-end-line="92" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="budget-management-list.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/templates/admin/budget-management-list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="107" column="34" lean-forward="true" selection-start-line="107" selection-start-column="34" selection-end-line="107" selection-end-column="34" />
-              <folding>
-                <element signature="e#1405#1411#0" expanded="true" />
-              </folding>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="budget-management.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/templates/admin/budget-management.html">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="60" lean-forward="false" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="60" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/admin/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="572">
+              <caret line="34" column="1" lean-forward="false" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -126,8 +195,8 @@
       <file leaf-file-name="advertiser-index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/admin/advertiser-index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="58" column="71" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="195" selection-end-column="0" />
+            <state relative-caret-position="1496">
+              <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
               <folding>
                 <element signature="e#7#558#0#PHP" expanded="true" />
               </folding>
@@ -135,12 +204,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="default.lang.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/max/language/uk/default.lang.php">
+      <file leaf-file-name="budget-management.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/admin/budget-management.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="919" column="25" lean-forward="false" selection-start-line="919" selection-start-column="25" selection-end-line="919" selection-end-column="25" />
-              <folding />
+            <state relative-caret-position="2794">
+              <caret line="127" column="35" lean-forward="true" selection-start-line="127" selection-start-column="35" selection-end-line="127" selection-end-column="35" />
+              <folding>
+                <element signature="e#7#558#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="1eb716435c9d43bcc2040d2dbcbe44d0.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/images/1eb716435c9d43bcc2040d2dbcbe44d0.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="1caa3466003d209d39ba542f85dea4a6.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/images/1caa3466003d209d39ba542f85dea4a6.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/var/.htaccess">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1511530641106" expanded="true" signature="60:122" ph="&lt;IfModule mod_authz_core.c&gt;" />
+                <marker date="1511530641106" expanded="true" signature="137:195" ph="&lt;IfModule !mod_authz_core.c&gt;" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -156,9 +254,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>affiliate-zones.php</find>
-      <find>UserPreferences</find>
-      <find>config.php</find>
       <find>enter</find>
       <find>login</find>
       <find>_buildNavigation</find>
@@ -186,6 +281,9 @@
       <find>$MARKET_TYPE</find>
       <find>余额</find>
       <find>market</find>
+      <find>登录</find>
+      <find>预算</find>
+      <find>budget-management</find>
     </findStrings>
     <dirStrings>
       <dir>E:\Exchange\computing_ad\grad_project\sad\data\www\reviveads</dir>
@@ -254,13 +352,20 @@
     </servers>
   </component>
   <component name="PhpWebServerValidation" deployment_server_id="e0b1e47d-b9f7-499e-bd82-22fa2500bdc7" path_to_validation_script="E:\Exchange\computing_ad\grad_project\sad\data\www\reviveads" selected_validation_type="REMOTE" web_path_to_validation_script="http://127.0.0.1/" />
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="Remote PHP 5.6" />
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="Remote PHP 5.6">
+    <include_path>
+      <path value="$PROJECT_DIR$/lib/vendor/composer" />
+      <path value="$PROJECT_DIR$/lib/vendor/sinergi/browser-detector" />
+    </include_path>
+  </component>
   <component name="PhpXdebugProxy" ide_key="phpstorm" host="127.0.0.1" port="9009" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="213" />
-    <option name="y" value="78" />
+    <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -277,7 +382,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -288,69 +393,13 @@
             <path>
               <item name="reviveads" type="b2602c69:ProjectViewProjectNode" />
               <item name="reviveads" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="reviveads" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reviveads" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="max" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="reviveads" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reviveads" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="OA" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="reviveads" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reviveads" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="OA" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="reviveads" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reviveads" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="OA" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="UI" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="reviveads" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reviveads" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="reviveads" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reviveads" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="reviveads" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reviveads" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="var" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="reviveads" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reviveads" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="www" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="reviveads" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reviveads" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="www" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -377,13 +426,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHP Web Application.Remote">
-    <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/www/admin/index.php" />
+  <component name="RunManager" selected="PHP Web Page.Remote">
     <configuration name="reviveads" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner directory="$PROJECT_DIR$" />
     </configuration>
+    <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/www/admin/index.php" />
     <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="PHP Web Application.Remote" />
+      <item index="0" class="java.lang.String" itemvalue="PHP Web Page.Remote" />
       <item index="1" class="java.lang.String" itemvalue="PHPUnit.reviveads" />
       <item index="2" class="java.lang.String" itemvalue="PHP Script.index.php" />
     </list>
@@ -395,6 +444,9 @@
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -415,6 +467,7 @@
       <workItem from="1511530725477" duration="294000" />
       <workItem from="1515245110384" duration="7018000" />
       <workItem from="1515332803685" duration="10060000" />
+      <workItem from="1517971928231" duration="637000" />
     </task>
     <servers />
   </component>
@@ -451,17 +504,16 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53953000" />
+    <option name="totallyTimeSpent" value="56080000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23454158" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.234375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22028354" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.114503816" sideWeight="0.4978678" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38853502" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -473,6 +525,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.114503816" sideWeight="0.4978678" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -500,11 +553,6 @@
           <line>43</line>
           <option name="timeStamp" value="47" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/www/admin/advertiser-index.php</url>
-          <line>77</line>
-          <option name="timeStamp" value="57" />
-        </line-breakpoint>
       </breakpoints>
       <option name="time" value="59" />
     </breakpoint-manager>
@@ -515,13 +563,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/OX/Extension/bannerTypeText/bannerTypeText.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1425">
-          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/max/Dal/DataObjects/Banners.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3591">
@@ -533,7 +574,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -541,7 +581,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -549,7 +588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -567,6 +605,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1511530641106" expanded="true" signature="60:122" ph="&lt;IfModule mod_authz_core.c&gt;" />
+            <marker date="1511530641106" expanded="true" signature="137:195" ph="&lt;IfModule !mod_authz_core.c&gt;" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -580,8 +622,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/admin/lib-storage.inc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="50" column="42" lean-forward="true" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
+        <state relative-caret-position="1848">
+          <caret line="92" column="1" lean-forward="false" selection-start-line="92" selection-start-column="1" selection-end-line="92" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -595,7 +637,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-456">
           <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -603,7 +644,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="584">
           <caret line="51" column="51" lean-forward="true" selection-start-line="51" selection-start-column="51" selection-end-line="51" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -611,7 +651,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -622,19 +661,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/var/cache/cache_10.108.121.211_ADMIN_Menu">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="0" column="38113" lean-forward="false" selection-start-line="0" selection-start-column="38113" selection-end-line="0" selection-end-column="38113" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/var/cache/cache_10.108.121.211_ADMIN_Menu" />
     <entry file="file://$PROJECT_DIR$/lib/max/language/zh_CN/userlog.lang.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="34" column="51" lean-forward="true" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -642,7 +673,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3211">
           <caret line="169" column="28" lean-forward="false" selection-start-line="169" selection-start-column="28" selection-end-line="169" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -650,7 +680,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7049">
           <caret line="379" column="5" lean-forward="false" selection-start-line="379" selection-start-column="5" selection-end-line="379" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -658,7 +687,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5662">
           <caret line="298" column="9" lean-forward="false" selection-start-line="298" selection-start-column="9" selection-end-line="298" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -666,7 +694,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="950">
           <caret line="50" column="25" lean-forward="false" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -674,7 +701,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="22" column="45" lean-forward="false" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -682,14 +708,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="296">
           <caret line="38" column="13" lean-forward="false" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/admin/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="41" column="53" lean-forward="false" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="53" />
+        <state relative-caret-position="572">
+          <caret line="34" column="1" lean-forward="false" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -698,9 +723,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <marker date="1511530645639" expanded="true" signature="1308:1314" ph=" " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -708,7 +730,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
           <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -724,10 +745,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="359">
           <caret line="190" column="50" lean-forward="true" selection-start-line="190" selection-start-column="50" selection-end-line="190" selection-end-column="50" />
-          <folding>
-            <marker date="1515334346937" expanded="true" signature="35638:35919" ph="..." />
-            <marker date="1515334346937" expanded="true" signature="45638:46159" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -735,7 +752,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="912">
           <caret line="56" column="43" lean-forward="true" selection-start-line="56" selection-start-column="43" selection-end-line="56" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -743,7 +759,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1057">
           <caret line="236" column="21" lean-forward="true" selection-start-line="236" selection-start-column="21" selection-end-line="236" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -751,7 +766,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -767,7 +781,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229">
           <caret line="83" column="27" lean-forward="false" selection-start-line="83" selection-start-column="27" selection-end-line="83" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -775,7 +788,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229">
           <caret line="42" column="9" lean-forward="false" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -799,7 +811,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
           <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="107" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -820,7 +831,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="165" column="0" lean-forward="false" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -836,7 +846,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -844,7 +853,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="375" column="55" lean-forward="true" selection-start-line="375" selection-start-column="55" selection-end-line="375" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -852,7 +860,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="427">
           <caret line="919" column="25" lean-forward="false" selection-start-line="919" selection-start-column="25" selection-end-line="919" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -860,20 +867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="1313" column="0" lean-forward="false" selection-start-line="1313" selection-start-column="0" selection-end-line="1313" selection-end-column="0" />
-          <folding>
-            <marker date="1511530636672" expanded="true" signature="95098:95110" ph="DELETE FROM " />
-            <marker date="1511530636672" expanded="true" signature="95430:95475" ph="INSERT INTO ${$table}... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/admin/advertiser-index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="58" column="71" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="195" selection-end-column="0" />
-          <folding>
-            <element signature="e#7#558#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -881,33 +874,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="60" lean-forward="false" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/admin/budget-management.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="131" column="0" lean-forward="true" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
-          <folding>
-            <element signature="e#7#558#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/admin/budget-management-list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="17" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/www/admin/budget-management-list.html" />
     <entry file="file://$PROJECT_DIR$/lib/templates/admin/advertiser-index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -915,7 +889,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
           <caret line="87" column="30" lean-forward="true" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -923,8 +896,32 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
           <caret line="107" column="34" lean-forward="true" selection-start-line="107" selection-start-column="34" selection-end-line="107" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/admin/advertiser-index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1496">
+          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
           <folding>
-            <element signature="e#1405#1411#0" expanded="true" />
+            <element signature="e#7#558#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/robots.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/admin/budget-management.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2794">
+          <caret line="127" column="35" lean-forward="true" selection-start-line="127" selection-start-column="35" selection-end-line="127" selection-end-column="35" />
+          <folding>
+            <element signature="e#7#558#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

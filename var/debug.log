@@ -6049,3 +6049,4 @@ Jan 08 03:35:46 +0000 OX-5a52e7121e449 [  warning]  Smarty error: unable to read
 Jan 08 04:19:12 +0000 OX-5a52f13ca6bd1 [    error]  Smarty error: [in budget-management.html line 83]: syntax error: foreach: missing 'from' attribute (Smarty_Compiler.class.php, line 1163)
 Jan 08 04:42:11 +0000 OX-5a52f69f70050 [  warning]  Smarty error: unable to read resource: &quot;budget-management-list.html&quot;
 Jan 08 04:43:13 +0000 OX-5a52f6dd17b2a [  warning]  Smarty error: unable to read resource: &quot;budget-management-list.html&quot;
+Feb 06 12:46:02 +0000 OX-5a79a38835b6b [     info]  Sync: updates found!
