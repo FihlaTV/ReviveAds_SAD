@@ -99,6 +99,8 @@ class MAX_Dal_Admin_Clients extends MAX_Dal_Common
      * @return array
      *
      * @todo Consider removing order options (or making them optional)
+     *
+     * Add balance item when do retrieval.
      */
     function getAllAdvertisers($listorder, $orderdirection, $agencyId = null, $aIncludeSystemTypes = array())
     {
@@ -113,7 +115,7 @@ class MAX_Dal_Admin_Clients extends MAX_Dal_Common
         $doClients->whereInAdd('type', $aIncludeSystemTypes);
         $doClients->orderBy('(type='.DataObjects_Clients::ADVERTISER_TYPE_DEFAULT.') ASC');
         $doClients->addListOrderBy($listorder, $orderdirection);
-        return $doClients->getAll(array('clientname', 'type'), $indexWitkPk = true, $flatten = false);
+        return $doClients->getAll(array('clientname', 'type', 'balance'), $indexWitkPk = true, $flatten = false);
     }
 
     /**

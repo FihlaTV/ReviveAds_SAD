@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.18, created on 2018-01-08 12:52:50
+<?php /* Smarty version 2.6.18, created on 2018-02-08 22:34:31
          compiled from budget-management-list.html */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'ox_column_class', 'budget-management-list.html', 38, false),array('function', 'ox_column_title', 'budget-management-list.html', 39, false),array('function', 't', 'budget-management-list.html', 42, false),array('function', 'cycle', 'budget-management-list.html', 83, false),array('function', 'ox_entity_id', 'budget-management-list.html', 93, false),array('modifier', 'count', 'budget-management-list.html', 50, false),array('modifier', 'escape', 'budget-management-list.html', 90, false),)), $this); ?>
@@ -31,7 +31,7 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'ox_column_c
         <tr>
             <th class='<?php echo OA_Admin_Template::_function_ox_column_class(array('item' => 'name','order' => 'up','default' => 1), $this);?>
 '>
-                <?php echo OA_Admin_Template::_function_ox_column_title(array('item' => 'name','order' => 'up','default' => 1,'str' => 'Name','url' => "advertiser-index.php"), $this);?>
+                <?php echo OA_Admin_Template::_function_ox_column_title(array('item' => 'name','order' => 'up','default' => 1,'str' => 'Name','url' => "budget-management.php"), $this);?>
 
             </th>
             <th class="">
@@ -101,7 +101,8 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'ox_column_c
 
                 <?php endif; ?>
             </td>
-            <td>50</td>
+            <td><?php echo $this->_tpl_vars['client']['balance']; ?>
+</td>
             <td class='alignRight horizontalActions'>
                 <ul class='rowActions'>
                     <li>

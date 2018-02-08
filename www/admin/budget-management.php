@@ -79,13 +79,11 @@ require_once MAX_PATH . '/lib/OA/Admin/Template.php';
 
 $oTpl = new OA_Admin_Template('budget-management.html');
 
-// Get clients & campaigns and build the tree
+// Get clients and build the tree
 // XXX: Now that the two are next to each other, some silliness
 //      is quite visible -- retrieving all items /then/ retrieving a count.
 // TODO: This looks like a perfect candidate for object "polymorphism"
 $dalClients = OA_Dal::factoryDAL('clients');
-
-
 
 
 if (OA_Permission::isAccount(OA_ACCOUNT_ADMIN)) {
@@ -117,8 +115,6 @@ $oTpl->assign('aCount', $aCount);
 $oTpl->assign('hideinactive', $hideinactive);
 $oTpl->assign('listorder', $listorder);
 $oTpl->assign('orderdirection', $orderdirection);
-$oTpl->assign('MARKET_TYPE', DataObjects_Clients::ADVERTISER_TYPE_MARKET);
-
 
 
 /*-------------------------------------------------------*/

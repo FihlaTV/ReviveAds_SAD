@@ -58,6 +58,7 @@ class DataObjects_Clients extends DB_DataObjectCommon
     public $account_id;                      // MEDIUMINT(9) => openads_mediumint => 1
     public $advertiser_limitation;           // TINYINT(1) => openads_tinyint => 145
     public $type;                            // TINYINT(4) => openads_tinyint => 129
+    public $balance;                         // FLOAT, newly added
 
     /* Static get */
     function staticGet($k,$v=NULL) { return DB_DataObject::staticGetFromClassName('DataObjects_Clients',$k,$v); }
@@ -73,6 +74,7 @@ class DataObjects_Clients extends DB_DataObjectCommon
                 'updated' => '%DATE_TIME%',
                 'advertiser_limitation' => 0,
                 'type' => ADVERTISER_TYPE_DEFAULT,
+                'balance' => 0,
                 );
 
     /* the code above is auto generated do not remove the tag below */

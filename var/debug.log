@@ -6383,3 +6383,11 @@ Feb 08 09:49:05 +0000 OX-maintenance-5a7c1d10bff72 [     info]  Task begin: OA_M
 Feb 08 09:49:05 +0000 OX-maintenance-5a7c1d10bff72 [     info]  - Selecting Managers with ECPM priority campaigns running
 Feb 08 09:49:05 +0000 OX-maintenance-5a7c1d10bff72 [     info]  Task complete: OA_Maintenance_Priority_AdServer_Task_ECPMforRemnant
 Feb 08 09:49:05 +0000 OX-maintenance-5a7c1d10bff72 [     info]  Maintenance Priority Engine Completed (Started at 2018-02-08 17:49:05 CST)
+Feb 08 13:58:44 +0000 OX-5a7c577b3ed5d [    error]  Smarty error: [in budget-management-list.html line 96]: syntax error: unrecognized tag: client.balance (Smarty_Compiler.class.php, line 444)
+Feb 08 13:58:44 +0000 OX-5a7c577b3ed5d [    error]  Smarty error: [in budget-management-list.html line 96]: syntax error: unrecognized tag '' (Smarty_Compiler.class.php, line 588)
+Feb 08 14:29:31 +0000 OX-5a7c5ebd248b6 [    error]  Smarty error: [in budget-management-list.html line 96]: syntax error: unrecognized tag: client.balance (Smarty_Compiler.class.php, line 444)
+Feb 08 14:29:31 +0000 OX-5a7c5ebd248b6 [    error]  Smarty error: [in budget-management-list.html line 96]: syntax error: unrecognized tag '' (Smarty_Compiler.class.php, line 588)
+Feb 08 14:29:31 +0000 OX-5a7c5ebd248b6 [    error]  Smarty error: [in budget-management-list.html line 96]: syntax error: unrecognized tag: client.clientname (Smarty_Compiler.class.php, line 444)
+Feb 08 14:29:31 +0000 OX-5a7c5ebd248b6 [    error]  Smarty error: [in budget-management-list.html line 96]: syntax error: unrecognized tag '' (Smarty_Compiler.class.php, line 588)
+Feb 08 14:29:31 +0000 OX-5a7c5ebd248b6 [    error]  Smarty error: [in budget-management-list.html line 96]: syntax error: unrecognized tag: client.type (Smarty_Compiler.class.php, line 444)
+Feb 08 14:29:31 +0000 OX-5a7c5ebd248b6 [    error]  Smarty error: [in budget-management-list.html line 96]: syntax error: unrecognized tag '' (Smarty_Compiler.class.php, line 588)
