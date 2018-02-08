@@ -294,6 +294,124 @@ class OA_Admin_UI
         }
     }
 
+
+    function showHeaderWithoutAuth($ID = null, $showSidebar=true, $showContentFrame=true, $showMainNavigation=true){
+        global $conf, $phpAds_CharSet, $phpAds_breadcrumbs_extra;
+        $conf = $GLOBALS['_MAX']['CONF'];
+
+        $ID = $this->getID($ID);
+        $this->setCurrentId($ID);
+
+
+        $pageTitle = !empty($conf['ui']['applicationName']) ? $conf['ui']['applicationName'] : PRODUCT_NAME;
+        $aMainNav        = array();
+        $aLeftMenuNav    = array();
+        $aLeftMenuSubNav = array();
+        $aSectionNav     = array();
+
+        if ($ID !== phpAds_Login && $ID !== phpAds_Error && $ID !== phpAds_PasswordRecovery) {
+            // Get system navigation
+            $oMenu = OA_Admin_Menu::singleton();
+            // Update page title
+            $oCurrentSection = $oMenu->get($ID);
+
+            $this->redirectSectionToCorrectUrlIfOldUrlDetected($oCurrentSection);
+
+            if ($oCurrentSection == null) {
+                phpAds_Die($GLOBALS['strErrorOccurred'], 'Menu system error: <strong>' . OA_Permission::getAccountType(true) . '::' . htmlspecialchars($ID) . '</strong> not found for the current user: you might not have sufficient permission to view this page. <br/>If the problem persists, you can also try to delete the files inside your /path/to/openx/var/cache/ directory.');
+            }
+
+
+            // compile navigation arrays
+            $this->_compileMainNavigationTabBar($oCurrentSection, $oMenu, $aMainNav);
+            $this->_compileLeftMenuNavigation($oCurrentSection, $oMenu, $aLeftMenuNav);
+            $this->_compileLeftSubMenuNavigation($oCurrentSection, $oMenu, $aLeftMenuSubNav);
+            $this->_compileSectionTabBar($oCurrentSection, $oMenu, $aSectionNav);
+
+        }
+        else {
+            // Build tabbed navigation bar
+            if ($ID == phpAds_Login) {
+                $aMainNav[] = array(
+                    'title'    => $GLOBALS['strAuthentification'],
+                    'filename' => 'index.php',
+                    'selected' => true
+                );
+            } elseif ($ID == phpAds_Error) {
+                $aMainNav[] = array(
+                    'title'    => $GLOBALS['strErrorOccurred'],
+                    'filename' => 'index.php',
+                    'selected' => true
+                );
+            } elseif ($ID == phpAds_PasswordRecovery) {
+                $aMainNav[] = array (
+                    'title'    => $GLOBALS['strPasswordRecovery'],
+                    'filename' => 'index.php',
+                    'selected' => true
+                );
+            }
+
+            $showContentFrame=false;
+        }
+
+
+        //html header
+        $this->_assignLayout($pageTitle);
+        $this->_assignJavascriptandCSS();
+
+        //layout stuff
+        $this->oTpl->assign('uiPart', 'header');
+        $this->oTpl->assign('showContentFrame', $showContentFrame);
+        $this->oTpl->assign('showSidebar', $showSidebar);
+        $this->oTpl->assign('showMainNavigation', $showMainNavigation);
+
+        //top
+        $this->_assignBranding($conf['ui']);
+        $this->_assignSearch($ID);
+        $this->_assignUserAccountInfo($oCurrentSection);
+
+        $this->oTpl->assign('hideNavigator', $conf['ui']['hideNavigator']);
+        // Tabbed navigation bar and sidebar
+        $this->oTpl->assign('aMainTabNav', $aMainNav);
+        $this->oTpl->assign('aLeftMenuNav', $aLeftMenuNav);
+        $this->oTpl->assign('aLeftMenuSubNav', $aLeftMenuSubNav);
+        $this->oTpl->assign('aSectionNav', $aSectionNav);
+        // This is used to show banner preview
+        $this->oTpl->assign('breadcrumbsExtra', $phpAds_breadcrumbs_extra);
+
+        //tools and shortcuts
+        $this->oTpl->assign('aTools', $this->aTools);
+        $this->oTpl->assign('aShortcuts', $this->aShortcuts);
+
+        //additional things
+        $this->_assignJavascriptDefaults(); //JS validation messages and other defaults
+        $this->_assignAlertMPE(); //mpe xajax
+        $this->_assignInstalling(); //install indicator
+        $this->_assignMessagesAndNotifications(); //messaging system
+
+        /* DISPLAY */
+        // Use gzip content compression
+        if (isset($conf['ui']['gzipCompression']) && $conf['ui']['gzipCompression']) {
+            //enable compression if it's not alredy handled by the zlib and ob_gzhandler is loaded
+            $zlibCompression = ini_get('zlib.output_compression');
+            if (!$zlibCompression && function_exists('ob_gzhandler')) {
+                // enable compression only if it wasn't enabled previously (e.g by widget)
+                //also, we cannot enable gzip if session was started
+                $session_id = session_id(); //check if there's any session
+                if (ob_get_contents() === false && empty($session_id)) {
+                    ob_start("ob_gzhandler");
+                }
+            }
+        }
+        // Send header with charset info and display
+        header ("Content-Type: text/html".(isset($phpAds_CharSet) && $phpAds_CharSet != "" ? "; charset=".$phpAds_CharSet : ""));
+        $this->oTpl->display();
+        if (!defined('phpAds_installing')) {
+            OX_Admin_UI_Hooks::afterPageHeader($id);
+        }
+    }
+
+
     // if the current menu section has been replaced (ie. some attributes of the menu were replaced in a plugin menu file definition)
     // we want to check that the current URL is the one that has been defined for this section (in the "link" attribute).
     // if the section "link" is different from the current URL, it means that you are accessing a page for which the Section's "link" has been overwritten.

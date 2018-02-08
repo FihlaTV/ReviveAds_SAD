@@ -44,7 +44,7 @@ class OA_Admin_Menu
         if (isset($GLOBALS['_MAX']['MENU_OBJECT'][$accountType])) {
            $oMenu = &$GLOBALS['_MAX']['MENU_OBJECT'][$accountType];
         }
-        elseif( $GLOBALS['_MAX']['CONF']['debug']['production'] != 0 // in debug mode, we don't load the menu from cache
+        elseif( $GLOBALS['_MAX']['CONF']['debug']['production'] == 10 // in debug mode, we don't load the menu from cache
                 && $oMenu = OA_Admin_Menu::_loadFromCache($accountType))
         {
             $GLOBALS['_MAX']['MENU_OBJECT'][$accountType] = &$oMenu;

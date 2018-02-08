@@ -374,6 +374,9 @@ class Plugins_Authentication extends OX_Component
      * @param string $emailAddress  Email address
      * @param integer $accountId  a
      * @return integer  User ID or false on error
+     *
+     * Change log: if user has existed, return -1 as error code, else return new user id.
+     *
      */
     function saveUserDo(&$doUsers, $login, $password, $contactName,
         $emailAddress, $language, $accountId)
@@ -382,8 +385,8 @@ class Plugins_Authentication extends OX_Component
         $doUsers->email_address = $emailAddress;
         $doUsers->language = $language;
         if ($doUsers->user_id) {
-            $doUsers->update();
-            return $doUsers->user_id;
+//            $doUsers->update();
+            return -1;
         } else {
             $doUsers->default_account_id = $accountId;
             $doUsers->username = $login;
@@ -501,6 +504,21 @@ class Plugins_Authentication extends OX_Component
     }
 
     /**
+     * Validates agency login - required for linking new users
+     *
+     * @param string $login
+     */
+    function validateAgencyLogin($login)
+    {
+        if (empty($login)) {
+            $this->addValidationError($GLOBALS['strInvalidUsername']);
+        } elseif (OA_Permission::agencyNameExists($login)) {
+            $this->addValidationError($GLOBALS['strDuplicateClientName']);
+        }
+    }
+
+
+    /**
      * Validates user password - required for linking new users
      *
      * @param string $password
@@ -544,6 +562,20 @@ class Plugins_Authentication extends OX_Component
 
         return $this->getValidationErrors();
     }
+
+    // no auth validate, don't validate request token.
+    function validateUsersDataWithoutAuth($data){
+        if (empty($data['userid'])) {
+            $this->validateUsersLogin($data['login']);
+            $this->validateAgencyLogin($data['login']);
+            $this->validateUsersPasswords($data['passwd'], $data['passwd2']);
+            $this->validateUsersPassword($data['passwd']);
+        }
+        $this->validateUsersEmail($data['email_address']);
+
+        return $this->getValidationErrors();
+    }
+
 }
 
 

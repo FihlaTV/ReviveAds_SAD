@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.18, created on 2018-01-07 13:28:46
+<?php /* Smarty version 2.6.18, created on 2018-02-08 09:47:17
          compiled from login.html */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'escape', 'login.html', 15, false),array('function', 't', 'login.html', 21, false),array('function', 'tabindex', 'login.html', 38, false),array('function', 'phpAds_ShowBreak', 'login.html', 65, false),)), $this); ?>
@@ -56,7 +56,7 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'escape', 'l
                             <input type="button" name="register" id="register" value="<?php echo OA_Admin_Template::_function_t(array('str' => 'Register'), $this);?>
 "<?php echo OA_Admin_Template::_function_tabindex(array(), $this);?>
 
-                                   onclick="location.href='register.php'"/>
+                                   onclick="location.href='register-agency-user.php'"/>
                         </td>
                     </tr>
                 </table>

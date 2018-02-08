@@ -147,6 +147,22 @@ class OA_Admin_UI_Component_Form
         return $ret;
     }
 
+
+    function validate_no_auth()
+    {
+        $ret = parent::validate_no_auth();
+
+        if (!$ret) {
+            // The form returned an error. We need to generate a new CSRF token, in any.
+            $token = $this->getElement('token');
+            if (!empty($token) && !PEAR::isError($token)) {
+                $token->setValue(phpAds_SessionGetToken());
+            }
+        }
+
+        return $ret;
+    }
+
     /**
      * Registers new JQuery QuickForm rule adaptor. Registered adaptors should
      * implement OA_Admin_UI_Rule_QuickFormToJQueryRuleAdaptor

@@ -26,6 +26,7 @@ define('OA_ACCOUNT_ADMIN',      'ADMIN');
 define('OA_ACCOUNT_MANAGER',    'MANAGER');
 define('OA_ACCOUNT_ADVERTISER', 'ADVERTISER');
 define('OA_ACCOUNT_TRAFFICKER', 'TRAFFICKER');
+define('OA_ACCOUNT_REGISTER', 'REGISTER');
 
 /**
  * Account types constants defined as integers
@@ -35,6 +36,7 @@ define ("OA_ACCOUNT_ADMIN_ID", 1);
 define ("OA_ACCOUNT_ADVERTISER_ID", 2);
 define ("OA_ACCOUNT_TRAFFICKER_ID", 4);
 define ("OA_ACCOUNT_MANAGER_ID", 8);
+define('OA_ACCOUNT_REGISTER_ID', 16);
 
 /**
  * Per-account permissions
@@ -1024,6 +1026,21 @@ class OA_Permission
     {
         $doUser = OA_Dal::factoryDO('users');
         if (!PEAR::isError($doUser) && $doUser->userExists($userName)) {
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * Checks whether such a agency name already exists
+     *
+     * @param string agencyName
+     * @return boolean  True if such agency name exists else false
+     */
+    public static function agencyNameExists($agencyName)
+    {
+        $doAgency = OA_Dal::factoryDO('accounts');
+        if (!PEAR::isError($doAgency) && $doAgency->userExists($agencyName)) {
             return true;
         }
         return false;

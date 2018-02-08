@@ -52,9 +52,10 @@ class Language_Loader {
         $PRODUCT_DOCSURL = PRODUCT_DOCSURL;
         $phpAds_dbmsname = phpAds_dbmsname;
 
-        // Always load the English language, in case of incomplete translations
-        if (file_exists (MAX_PATH . '/lib/max/language/en/' . $section . '.lang.php')) {
-            include MAX_PATH . '/lib/max/language/en/' . $section . '.lang.php';
+        //// Always load the English language, in case of incomplete translations
+        // Change to load Chinese in default
+        if (file_exists (MAX_PATH . '/lib/max/language/zh_CN/' . $section . '.lang.php')) {
+            include MAX_PATH . '/lib/max/language/zh_CN/' . $section . '.lang.php';
         } else {
             return; // Wrong section
         }

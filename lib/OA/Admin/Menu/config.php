@@ -297,9 +297,14 @@ function _buildNavigation($accountType)
                 $oMenu->addTo("account-index", new OA_Admin_Menu_Section("account-preferences-index", 'AccountPreferences', "account-preferences-index.php", false, "settings/prefrences"));
                 $oMenu->addTo("account-index", new OA_Admin_Menu_Section("userlog-index", 'UserLog', "userlog-index.php", false, "settings/userLog", array(array(OA_ACCOUNT_ADVERTISER => OA_PERM_USER_LOG_ACCESS))));
         break;
+
         default:
             // If the user is not logged in then $accountType will be null
-    }
+            // null account type's main menu only has main page
+            $oMenu->add(new OA_Admin_Menu_Section("register", 'Register', "register-agency-user.php\"", false, ""));
+                $oMenu->addTo("register", new OA_Admin_Menu_Section("home", 'Home', "index.php", false, ""));
+                $oMenu->addTo("register", new OA_Admin_Menu_Section("agency-user", 'LinkUser', "register-agency-user.php", true, ""));
+        }
 
     $GLOBALS['_MAX']['MENU_OBJECT'][$accountType] = &$oMenu;
     return $oMenu;

@@ -149,12 +149,26 @@ function addPageShortcut($title, $url, $iconClass, $accesskey = null)
  * @param bool $showContentFrame Set to false if you do not wish to show the content frame
  * @param bool $showMainNavigation Set to false if you do not wish to show the main navigation
  */
+
+
 function phpAds_PageHeader($ID = null, $headerModel = null, $imgPath="", $showSidebar=true, $showContentFrame=true, $showMainNavigation=true)
 {
     $GLOBALS['_MAX']['ADMIN_UI'] = OA_Admin_UI::getInstance();
     $GLOBALS['_MAX']['ADMIN_UI']->showHeader($ID, $headerModel, $imgPath, $showSidebar, $showContentFrame, $showMainNavigation);
     $GLOBALS['phpAds_GUIDone'] = true;
 }
+
+
+/*-------------------------------------------------------*/
+/* Show page header without user authentication          */
+/*-------------------------------------------------------*/
+
+function phpAds_PageHeader_No_Auth($ID = null, $headerModel = null, $imgPath="", $showSidebar=true, $showContentFrame=true, $showMainNavigation=true){
+    $GLOBALS['_MAX']['ADMIN_UI'] = OA_Admin_UI::getInstance();
+    $GLOBALS['_MAX']['ADMIN_UI']->showHeaderWithoutAuth($ID, $showSidebar, $showContentFrame, $showMainNavigation);
+    $GLOBALS['phpAds_GUIDone'] = true;
+}
+
 
 /*-------------------------------------------------------*/
 /* Show page footer                                      */

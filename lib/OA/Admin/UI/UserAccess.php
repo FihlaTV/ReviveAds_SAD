@@ -78,7 +78,8 @@ class OA_Admin_UI_UserAccess
         $this->callbackFooterNavigation = $callback;
     }
 
-    function process()
+
+    function processUser()
     {
         if (!empty($this->request['submit'])) {
             if (preg_match('#[\x00-\x1F\x7F]#', $this->request['login'])) {
@@ -91,7 +92,7 @@ class OA_Admin_UI_UserAccess
                     $this->userid, $this->request['login'], $this->request['passwd'],
                     $this->request['contact_name'], $this->request['email_address'],
                     $this->request['language'], $this->accountId);
-                if ($this->userid) {
+                if ($this->userid && $this->userid != -1) {
                     OA_Admin_UI_UserAccess::linkUserToAccount(
                         $this->userid, $this->accountId, $this->aPermissions,
                         $this->aAllowedPermissions);
@@ -102,6 +103,61 @@ class OA_Admin_UI_UserAccess
             }
         }
         $this->display();
+    }
+
+    // Process user data
+    function processRegisterUser()
+    {
+        if (!empty($this->request['submit'])) {
+
+            if (empty($this->aErrors)) {
+                $this->userid = $this->oPlugin->saveUser(
+                    $this->userid, $this->request['login'], $this->request['passwd'],
+                    $this->request['contact_name'], $this->request['email_address'],
+                    $this->request['language'], $this->accountId);
+                if ($this->userid && $this->userid != -1) {
+                    OA_Admin_UI_UserAccess::linkUserToAccount(
+                        $this->userid, $this->accountId, $this->aPermissions,
+                        $this->aAllowedPermissions);
+                    OX_Admin_Redirect::redirect($this->getRedirectUrl());
+                } else {
+                    $this->aErrors = $this->oPlugin->getSignupErrors();
+                }
+            }
+        }
+        $this->displayRegister();
+    }
+
+
+    // Process agency data
+    function processRegisterAgency(){
+        if (!empty($this->request['submit'])) {
+            if (preg_match('#[\x00-\x1F\x7F]#', $this->request['login'])) {
+                $this->aErrors = array($GLOBALS['strInvalidUsername']);
+            } else {
+                $this->aErrors = $this->oPlugin->validateUsersDataWithoutAuth($this->request);
+            }
+            if (empty($this->aErrors)) {
+                $agency['name'] = $this->request['login'];
+                $agency['contact'] = $this->request['contact_name'];
+                $agency['email'] = $this->request['email_address'];
+
+                // Permissions
+                $doAgency = OA_Dal::factoryDO('agency');
+                if (empty($aFields['agencyid'])) {
+                    $doAgency->setFrom($agency);
+                    $agencyid = $doAgency->insert();
+                    $aFields['agencyid'] = $agencyid;
+                } else {
+                    $doAgency->get($aFields['agencyid']);
+                    $doAgency->setFrom($agency);
+                    $doAgency->update();
+                }
+                $accountId = OA_Permission::getAccountIdForEntity('agency', $aFields['agencyid']);
+                $this->setAccountId($accountId);
+                $this->setHiddenFields(array('agencyid' => $aFields['agencyid']));
+            }
+        }
     }
 
     function display()
@@ -137,7 +193,7 @@ class OA_Admin_UI_UserAccess
             array(
                 'title'     => $GLOBALS['strUserDetails'],
                 'fields'    => $this->oPlugin->getUserDetailsFields($userData,
-                                   $this->request['link'])
+                    $this->request['link'])
             )
         );
         $aPermissionsFields = $this->_builPermissionFields();
@@ -158,6 +214,58 @@ class OA_Admin_UI_UserAccess
 
         phpAds_PageFooter();
     }
+
+
+    //for register use
+    function displayRegister()
+    {
+        $this->_processHeaderNavigation();
+
+        require_once MAX_PATH . '/lib/OA/Admin/Template.php';
+
+        $oTpl = new OA_Admin_Template($this->pagePrefix.'-user.html');
+        $oTpl->assign('action', 'register-'.$this->pagePrefix.'-user.php');
+        $oTpl->assign('backUrl', $this->backUrl);
+        $oTpl->assign('method', 'POST');
+        $oTpl->assign('aErrors', $this->aErrors);
+
+        $this->oPlugin->setTemplateVariables($oTpl);
+
+        $oTpl->assign('existingUser', !empty($this->userid));
+        $oTpl->assign('showLinkButton', !empty($this->request['link']));
+
+        $userData['username'] = $this->request['login'];
+        $userData['contact_name'] = $this->request['contact_name'];
+        $userData['email_address'] = $this->request['email_address'];
+        $userData['language'] = $this->request['language'];
+
+        $aTplFields = array(
+            array(
+                'title'     => $GLOBALS['strUserDetails'],
+                'fields'    => $this->oPlugin->getUserDetailsFields($userData,
+                    $this->request['link'])
+            )
+        );
+        $aPermissionsFields = $this->_builPermissionFields();
+        if (!empty($aPermissionsFields)) {
+            $aTplFields[] = array(
+                'title'     => $GLOBALS['strPermissions'],
+                'fields'    => $aPermissionsFields
+            );
+        }
+        $oTpl->assign('fields', $aTplFields);
+
+        $aHiddenFields = $this->_getHiddenFields($userData, $this->request['link'], $this->aHiddenFields);
+        $oTpl->assign('hiddenFields', $aHiddenFields);
+
+        $oTpl->display();
+
+        $this->_processFooterNavigation();
+
+        phpAds_PageFooter();
+    }
+
+
 
     function _builPermissionFields()
     {
@@ -403,6 +511,7 @@ class OA_Admin_UI_UserAccess
                 $userId, $aAllowedPermissions);
         }
     }
+
 
 }
 
